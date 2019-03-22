@@ -83,6 +83,8 @@ subsets<-regsubsets(sat~logtak+income+years+public+expend+rank,data=sat2,
 nbest=1)                  # Specify # of models of each size kept in the object
 plot(subsets)             # Plot best models of each size using BIC
 plot(subsets, scale="Cp") # Plot best models according to Cp
+
+summary(subsets)          # List all possible regression 
 summary(subsets)$cp       # Return Cp for each model  
 summary(subsets)$adjr2    # Return adjusted R2 for each model
 
