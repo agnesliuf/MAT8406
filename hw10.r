@@ -57,8 +57,6 @@ pr.out$rotation					# Identify first component loadings
 min3=sort(pr.out$x[,1],partial=3)[3]      # Return 3rd smallest score of 1st component
 nordic$Name[pr.out$x[,1]==min3]           # Report name associated with 3rd smallest score
 
-max3=sort(pr.out$x[,1],decreasing = TRUE)[3]# Return 3rd largest score of 1st component
-nordic$Name[pr.out$x[,1]==max3]  
 
 # Part (c)
 # ========
